@@ -1,3 +1,3 @@
-module github.com/nahid/gohttp
+module github.com/byq1/gohttp
 
-go 1.14
+go 1.18
