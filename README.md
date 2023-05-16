@@ -9,7 +9,7 @@ HTTP client for Go, its also support asynchronous request
 ## Installation
 
 ```
-go get github.com/nahid/gohttp
+go get github.com/byq1/gohttp
 ```
 
 ### Example
@@ -20,7 +20,7 @@ go get github.com/nahid/gohttp
 package main
 
 import (
-	"github.com/nahid/gohttp"
+	"github.com/byq1/gohttp"
 	"fmt"
 )
 
@@ -50,7 +50,7 @@ func main() {
 package main
 
 import (
-	"github.com/nahid/gohttp"
+	"github.com/byq1/gohttp"
 	"fmt"
 )
 
