@@ -105,6 +105,14 @@ func (req *Request) Text(formValues string) *Request {
 	return req
 }
 
+func (req *Request) CustomBody(formValues string, contentType string) *Request {
+
+	req.formVals = bytes.NewBuffer([]byte(formValues))
+	req.contentType = contentType
+
+	return req
+}
+
 // Query set request query param
 func (req *Request) Query(formValues map[string]string) *Request {
 	vals := url.Values{}
