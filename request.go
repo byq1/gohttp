@@ -105,9 +105,9 @@ func (req *Request) Text(formValues string) *Request {
 	return req
 }
 
-func (req *Request) CustomBody(formValues string, contentType string) *Request {
+func (req *Request) CustomBody(formValues []byte, contentType string) *Request {
 
-	req.formVals = bytes.NewBuffer([]byte(formValues))
+	req.formVals = bytes.NewBuffer(formValues)
 	req.contentType = contentType
 
 	return req
